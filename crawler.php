@@ -8,8 +8,7 @@ $url = "your_url_shold_be_here";
 $html = new simple_html_dom();
 $html->load_file($url);
 
-// array to store scraped links
-//$links = array();
+
 
 // crawl the webpage for links
 foreach($html->find("a") as $link){
@@ -18,7 +17,6 @@ foreach($html->find("a") as $link){
 	echo $url.$link->href."<br />";
 }
 
-// remove duplicates from the links array
-//$links = array_unique($links);
+
 
 ?>
