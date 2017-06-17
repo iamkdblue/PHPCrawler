@@ -2,8 +2,8 @@
 include_once("simple_html_dom.php");
 
 // set target url to crawl
-//$url = "http://dl2.downloado.site/dl2/Movie/"; // change this
-$url = "http://fs.evonetbd.com/Media/Movies/English%20Movies/2017/";
+
+$url = "your_url_shold_be_here";
 // open the web page
 $html = new simple_html_dom();
 $html->load_file($url);
